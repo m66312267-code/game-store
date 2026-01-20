@@ -69,3 +69,14 @@ a.app {
   text-decoration: none;
   color: inherit;
 }
+.download-btn {
+  margin-top: 10px;
+  padding: 8px 0;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  background: #00bcd4;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
