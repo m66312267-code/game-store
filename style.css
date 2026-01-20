@@ -58,3 +58,7 @@ body {
   color: #00bcd4;
   font-size: 12px;
 }
+a.app {
+  text-decoration: none;
+  color: inherit;
+}
