@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f4fefe;
+}
+
+/* الشريط اللي فوق */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* مكان التطبيقات */
+.apps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 12px;
+}
+
+/* الكارت */
+.app {
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* الصورة */
+.app img {
+  width: 80px;
+  border-radius: 16px;
+}
+
+/* الاسم */
+.app p {
+  margin: 8px 0 2px;
+  font-weight: bold;
+}
+
+/* مهكرة */
+.app small {
+  color: #00bcd4;
+}
+/* يخلي الكارت يتداس */
+.app {
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+/* لما تدوس */
+.app:active {
+  transform: scale(0.96);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
