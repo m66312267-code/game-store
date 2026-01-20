@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تحميل اللعبة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2 id="game-title">تحميل اللعبة</h2>
+
+  <a id="apk-link" class="download-btn">
+    تحميل APK
+  </a>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const game = params.get("game");
+
+    const games = {
+      freefire: {
+        name: "Free Fire",
+        apk: "games/freefire/freefire.apk"
+      },
+      Lark Player: {
+        name: "Lark Player",
+        apk: "games/Lark Player/LarkPlayer.apk"
+      }
+    };
+
+    if (games[game]) {
+      document.getElementById("game-title").innerText =
+        "تحميل " + games[game].name;
+      document.getElementById("apk-link").href =
+        games[game].apk;
+    }
+  </script>
+
+</body>
+</html>
