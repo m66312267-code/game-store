@@ -1,7 +1,8 @@
 body {
   margin: 0;
   font-family: Arial;
-  background: #f4fefe;
+  background: #eef9f8;
+  color: #222;
 }
 
 /* الشريط اللي فوق */
@@ -10,44 +11,25 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 12px;
-  background: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background: #ffffff;
+  color: #00bcd4;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 /* مكان التطبيقات */
 .apps {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-  padding: 12px;
+  gap: 14px;
+  padding: 14px;
 }
 
 /* الكارت */
 .app {
-  background: white;
-  border-radius: 12px;
-  padding: 10px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 12px;
   text-align: center;
-}
-
-/* الصورة */
-.app img {
-  width: 80px;
-  border-radius: 16px;
-}
-
-/* الاسم */
-.app p {
-  margin: 8px 0 2px;
-  font-weight: bold;
-}
-
-/* مهكرة */
-.app small {
-  color: #00bcd4;
-}
-/* يخلي الكارت يتداس */
-.app {
   cursor: pointer;
   transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
@@ -55,5 +37,24 @@ body {
 /* لما تدوس */
 .app:active {
   transform: scale(0.96);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* الصورة */
+.app img {
+  width: 84px;
+  border-radius: 18px;
+}
+
+/* اسم اللعبة */
+.app p {
+  margin: 10px 0 4px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* مهكرة */
+.app small {
+  color: #00bcd4;
+  font-size: 12px;
 }
