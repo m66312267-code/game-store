@@ -1,0 +1,8 @@
+{
+  "name": "ALMAHS Games",
+  "short_name": "ALMAHS",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#00bcd4"
+}
